@@ -7,10 +7,17 @@ function calculateLove() {
         return;
     }
 
-    let percentage =  Math.floor(Math.random() * 51) + 50;
+    let key = yourName + '_' + crushName;
+    let storedPercentage = localStorage.getItem(key);
+    
+    if (!storedPercentage) {
+        let newPercentage = Math.floor(Math.random() * 51) + 50;
+        localStorage.setItem(key, newPercentage);
+        storedPercentage = newPercentage;
+    }
 
     var resultMessage = `💖 ${yourName} and ${crushName} have a love compatibility of💖`
-    var resultPercentage = `❤️ ${percentage}% ❤️`;
+    var resultPercentage = `❤️ ${storedPercentage}% ❤️`;
 
     document.getElementById('result-message').innerText = resultMessage;
     document.getElementById('result-percentage').innerText = resultPercentage;
