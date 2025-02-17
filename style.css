@@ -65,3 +65,52 @@ button:hover {
     background-color: #ff0000;
     transform: scale(1.1);
 }
+
+#result-message {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff3366; /* Pinkish-red */
+    text-shadow: 2px 2px 5px rgba(255, 20, 147, 0.6); /* Glowing effect */
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+}
+
+/* Styling for Result Percentage */
+#result-percentage {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ff2a68; /* Deeper pink-red */
+    text-shadow: 2px 2px 8px rgba(255, 69, 104, 0.7); /* Enhanced glowing effect */
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+}
+
+/* Add animation to results for a smooth reveal */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply animation to the result elements */
+#result-message, #result-percentage {
+    animation: fadeIn 1s ease-out;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    #result-message {
+        font-size: 20px;
+    }
+
+    #result-percentage {
+        font-size: 25px;
+    }
+}
