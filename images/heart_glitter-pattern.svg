@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ff1493"/>
+  
+  <!-- Pattern Definitions -->
+  <defs>
+    <pattern id="heartPattern" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+      <!-- Large heart -->
+      <path d="M50,78 L42,70 Q26,56 26,38 Q26,26 36,26 Q46,26 50,36 Q54,26 64,26 Q74,26 74,38 Q74,56 58,70 Z" 
+            fill="rgba(255,255,255,0.4)" transform="rotate(-15, 50, 50)"/>
+      
+      <!-- Sparkle star 1 -->
+      <path d="M20,20 L23,23 M20,23 L23,20 M21.5,18 L21.5,25 M18,21.5 L25,21.5" 
+            stroke="rgba(255,255,255,0.8)" stroke-width="1"/>
+            
+      <!-- Sparkle star 2 -->
+      <path d="M80,70 L83,73 M80,73 L83,70 M81.5,68 L81.5,75 M78,71.5 L85,71.5" 
+            stroke="rgba(255,255,255,0.8)" stroke-width="1"/>
+            
+      <!-- Sparkle star 3 -->
+      <path d="M70,30 L72,32 M70,32 L72,30 M71,29 L71,33 M69,31 L73,31" 
+            stroke="rgba(255,255,255,0.8)" stroke-width="0.8"/>
+      
+      <!-- Small heart 1 -->
+      <path d="M25,45 L22,42 Q16,37 16,31 Q16,27 20,27 Q24,27 25,30 Q26,27 30,27 Q34,27 34,31 Q34,37 28,42 Z" 
+            fill="rgba(255,255,255,0.35)" transform="rotate(15, 25, 45)"/>
+            
+      <!-- Small heart 2 -->
+      <path d="M75,85 L72,82 Q66,77 66,71 Q66,67 70,67 Q74,67 75,70 Q76,67 80,67 Q84,67 84,71 Q84,77 78,82 Z" 
+            fill="rgba(255,255,255,0.35)" transform="rotate(-10, 75, 85)"/>
+      
+      <!-- Glitter dots -->
+      <circle cx="15" cy="85" r="1" fill="rgba(255,255,255,0.9)"/>
+      <circle cx="85" cy="15" r="1" fill="rgba(255,255,255,0.9)"/>
+      <circle cx="45" cy="65" r="0.8" fill="rgba(255,255,255,0.9)"/>
+      <circle cx="65" cy="45" r="0.8" fill="rgba(255,255,255,0.9)"/>
+      
+      <!-- Tiny sparkle bursts -->
+      <circle cx="30" cy="70" r="0.5" fill="rgba(255,255,255,1)"/>
+      <circle cx="70" cy="30" r="0.5" fill="rgba(255,255,255,1)"/>
+    </pattern>
+  </defs>
+  
+  <!-- Apply the pattern -->
+  <rect width="100%" height="100%" fill="url(#heartPattern)"/>
+  
+  <!-- Add a radial gradient overlay for extra sparkle -->
+  <rect width="100%" height="100%" fill="url(#sparkleGradient)" />
+  <defs>
+    <radialGradient id="sparkleGradient" cx="50%" cy="50%" r="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.1" />
+      <stop offset="50%" style="stop-color:#ffffff;stop-opacity:0.05" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+</svg>

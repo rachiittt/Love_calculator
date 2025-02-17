@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ff1493"/>
+  
+  <!-- Heart Pattern Definition -->
+  <defs>
+    <pattern id="heartPattern" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+      <!-- Large heart -->
+      <path d="M50,78 L42,70 Q26,56 26,38 Q26,26 36,26 Q46,26 50,36 Q54,26 64,26 Q74,26 74,38 Q74,56 58,70 Z" 
+            fill="rgba(255,255,255,0.3)" transform="rotate(-15, 50, 50)"/>
+      
+      <!-- Medium heart top right -->
+      <path d="M75,45 L70,40 Q60,32 60,22 Q60,15 66,15 Q72,15 75,21 Q78,15 84,15 Q90,15 90,22 Q90,32 80,40 Z" 
+            fill="rgba(255,255,255,0.25)" transform="rotate(15, 75, 30)"/>
+      
+      <!-- Small heart bottom left -->
+      <path d="M25,85 L22,82 Q16,77 16,71 Q16,67 20,67 Q24,67 25,70 Q26,67 30,67 Q34,67 34,71 Q34,77 28,82 Z" 
+            fill="rgba(255,255,255,0.35)" transform="rotate(-10, 25, 75)"/>
+            
+      <!-- Tiny decorative hearts -->
+      <circle cx="15" cy="15" r="2" fill="rgba(255,255,255,0.4)"/>
+      <circle cx="85" cy="85" r="2" fill="rgba(255,255,255,0.4)"/>
+      <circle cx="40" cy="90" r="1.5" fill="rgba(255,255,255,0.4)"/>
+      <circle cx="90" cy="40" r="1.5" fill="rgba(255,255,255,0.4)"/>
+    </pattern>
+  </defs>
+  
+  <!-- Apply the pattern -->
+  <rect width="100%" height="100%" fill="url(#heartPattern)"/>
+  
+  <!-- Add a subtle gradient overlay for depth -->
+  <rect width="100%" height="100%" fill="url(#gradient)" />
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0" />
+    </linearGradient>
+  </defs>
+</svg>
