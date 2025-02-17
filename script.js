@@ -7,7 +7,7 @@ function calculateLove() {
         return;
     }
 
-    let percentage = Math.floor(Math.random() * 101);
+    let percentage =  Math.floor(Math.random() * 51) + 50;
 
     var resultMessage = `💖 ${yourName} and ${crushName} have a love compatibility of💖`
     var resultPercentage = `❤️ ${percentage}% ❤️`;
