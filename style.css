@@ -62,8 +62,8 @@ button {
 }
 
 button:hover {
-    background-color: #ff0000;
-    transform: scale(1.1);
+    background-color: #f00c0c;
+    transform: scale(1.2);
 }
 
 #result-message {
